@@ -7,7 +7,7 @@ def index():
     #Data yg akan di looping dan dikondisikan
     prodi = ['Sistem Informasi', 'Teknik Informatika','Bisnis Digital']
 
-    jurusan="Sistem Informasi"
+    jurusan="Binsnis Digital"
 
     return render_template("index.html", prodi=prodi, jurusan=jurusan)
 
