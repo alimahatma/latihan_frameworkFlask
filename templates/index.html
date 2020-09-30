@@ -9,6 +9,7 @@
 
     <p><h1>STMIK LOMBOK</h1></p>
     <div>
+        <p>==========HASIL LOOPING JINJA=============</p>
         <!--Looping Dengan Jinjay-->
         <p>Daftar Program Studi STMIK Lombok:</p>
         {% for data in prodi %}
@@ -16,6 +17,7 @@
         {% endfor %} 
     </div>
     <div>
+        <p>==========HASIL PENGKONDISIAN==========</p>
         <!--Condition if/else-->
         {% if jurusan == "Teknik Informatika" %}
         <p>Anda akan menjadi software developer yg keren.!</p>
@@ -27,6 +29,26 @@
         <p>Anda salah memasukkan data</p>
         {% endif %}
     </div>
-    
+    <div>
+        <p>==========HASIL SET VARIABEL==========</p>
+        <!--SET VARIABEL-->
+        {% set data = "Jurusan Favorit" %}
+        <p>{{ data }}</p>
+        
+    </div>
+    <div>
+        <p>==========HASIL SET VARIABEL DARI LOOPING JINJAY==========</p>
+        {% for data in prodi %}
+        {% if data == "Sistem Informasi" %}
+        <p>Menjadi Arsitektur yg Keren..!</p>
+        {% elif data == "Teknik Informatika" %}
+        <p>Anda menjadi pengembang yang jago..!</p>
+        {% elif data =="Bisnis Digital" %}
+        <p>Anda menjadi CEO lhoo.!</p>
+        {% endif %}
+        {% endfor %}
+       
+
+    </div>
 </body>
 </html>
