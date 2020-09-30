@@ -14,7 +14,18 @@
         {% for data in prodi %}
         <li>{{ data }}</li> 
         {% endfor %} 
-
+    </div>
+    <div>
+        <!--Condition if/else-->
+        {% if jurusan == "Teknik Informatika" %}
+        <p>Anda akan menjadi software developer yg keren.!</p>
+        {% elif jurusan == "Sistem Informasi" %}
+        <p>Anda akan menjadi Arsitektur TI yang expert</p>
+        {% elif jurusan == "Bisnis Digital" %}
+        <p>Anda akan menjadi CEO lhoo.!</p>
+        {% else %}
+        <p>Anda salah memasukkan data</p>
+        {% endif %}
     </div>
     
 </body>

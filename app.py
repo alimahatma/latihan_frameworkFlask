@@ -4,10 +4,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    #Data yg akan di looping
+    #Data yg akan di looping dan dikondisikan
     prodi = ['Sistem Informasi', 'Teknik Informatika','Bisnis Digital']
 
-    jurusan="Teknik Informatika"
+    jurusan="Sistem Informasi"
 
     return render_template("index.html", prodi=prodi, jurusan=jurusan)
 
