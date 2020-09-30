@@ -1,0 +1,4 @@
+CARA INSTALL FLASK
+1. pip install virtualenv
+2. virtualenv envFlask : untuk membuat directory environmet
+3. membuat file project
